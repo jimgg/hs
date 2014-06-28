@@ -19,11 +19,11 @@ compareLines [] [] = do
     putStr ""
 compareLines [] (y:ys) = do
     compareLines y ys
-compareLines xx@(x:xs) (y:ys) = do
-    compareLine xx y
+compareLines x (y:ys) = do
+    compareLine x y
     compareLines y ys
-compareLines xx@(x:xs) [] = do
-    compareLine xx []
+compareLines x [] = do
+    compareLine x []
 -- }}}
 
 -- compare {{{
